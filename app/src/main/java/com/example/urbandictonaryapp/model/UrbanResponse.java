@@ -2,18 +2,15 @@ package com.example.urbandictonaryapp.model;
 
 import java.util.List;
 
-import com.google.gson.annotations.SerializedName;
-
 public class UrbanResponse {
 
-    @SerializedName("list")
-    private List<ListItem> list;
+    private List<Definition> list;
 
-    public void setList(List<ListItem> list) {
+    public void setList(List<Definition> list) {
         this.list = list;
     }
 
-    public List<ListItem> getList() {
+    public List<Definition> getList() {
         return list;
     }
 

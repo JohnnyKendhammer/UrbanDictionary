@@ -4,9 +4,8 @@ import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ListItem {
+public class Definition {
 
-    @SerializedName("defid")
     private int defid;
 
     @SerializedName("sound_urls")
@@ -15,28 +14,23 @@ public class ListItem {
     @SerializedName("thumbs_down")
     private int thumbsDown;
 
-    @SerializedName("author")
     private String author;
 
     @SerializedName("written_on")
     private String writtenOn;
 
-    @SerializedName("definition")
     private String definition;
 
-    @SerializedName("permalink")
     private String permalink;
 
     @SerializedName("thumbs_up")
     private int thumbsUp;
 
-    @SerializedName("word")
     private String word;
 
     @SerializedName("current_vote")
     private String currentVote;
 
-    @SerializedName("example")
     private String example;
 
     public void setDefid(int defid) {
@@ -130,7 +124,7 @@ public class ListItem {
     @Override
     public String toString() {
         return
-                "ListItem{" +
+                "Definition{" +
                         "defid = '" + defid + '\'' +
                         ",sound_urls = '" + soundUrls + '\'' +
                         ",thumbs_down = '" + thumbsDown + '\'' +
